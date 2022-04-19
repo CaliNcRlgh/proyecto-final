@@ -1,0 +1,30 @@
+h1{
+    background-color: gold;
+}
+.box{
+    background-color: gold;
+}
+
+.nav{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: brown;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: gold;
+}
+
+.nav a:hover{
+    text-decoration: line-through;
+}
