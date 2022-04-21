@@ -9,13 +9,14 @@ Aspectos:
 */
 
 import React from 'react';
-import './NavBar.css'
-
+import '../css-components/NavBar.css'
+import CartWidget from './CartWidget.jsx';
+import imgLogo from '../assets/img/logopri.png'
 function NavBar(props) {
     return (
         <div className='box'>
 
-            <h1>Cod Store</h1>
+            <img height='40px' className='logoPrincipal' src={imgLogo} alt="logo-cod" />
 
             <ul className='nav'>
                 <li><a href='#'>Assault Rifles</a></li>
@@ -24,7 +25,11 @@ function NavBar(props) {
                 <li><a href='#'>Light machine guns</a></li>
                 <li><a href='#'>Shotguns</a></li>
             </ul>
+            <>
+            <CartWidget/>
+            </>
         </div>
+        
     );
 }
 
